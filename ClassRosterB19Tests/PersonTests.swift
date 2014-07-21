@@ -9,6 +9,8 @@
 import XCTest
 
 class PersonTests: XCTestCase {
+    
+    var person = Person(firstName: "Bob", lastName: "Dole")
 
     override func setUp() {
         super.setUp()
@@ -26,13 +28,10 @@ class PersonTests: XCTestCase {
     }
 
     func testFirstName() {
-        var person = Person(firstName: "Bob", lastName: "Dole")
-        //person.firstName = "Brad"
         XCTAssertNotNil(person.firstName, "person's first name property was not created")
     }
     
     func testPersonInit(){
-        var person = Person(firstName:"Brad", lastName:"Johnson")
         XCTAssertNotNil(person, "person can not be created")
     }
     
@@ -40,8 +39,10 @@ class PersonTests: XCTestCase {
         var first = "Bob"
         var last = "Dole"
         
-        var person = Person(firstName: "Bob", lastName: "Dole")
-        
         XCTAssertEqual(person.fullName(), first + " " + last, "full name is matching")
+    }
+    
+    func testPersonPic() {
+        XCTAssertNotNil(person.pic, "person has no pic value")
     }
 }

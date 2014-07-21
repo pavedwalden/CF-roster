@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA946AFD197DBCFF00384402 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0EA16197D963B00905275 /* Person.swift */; };
+		FA946AFF197DC57500384402 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = FA946AFE197DC57500384402 /* person.png */; };
 		FAF0E9F2197D886F00905275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0E9F1197D886F00905275 /* AppDelegate.swift */; };
 		FAF0E9F4197D886F00905275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0E9F3197D886F00905275 /* ViewController.swift */; };
 		FAF0E9F7197D886F00905275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF0E9F5197D886F00905275 /* Main.storyboard */; };
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA946AFE197DC57500384402 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 		FAF0E9EC197D886F00905275 /* ClassRosterB19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassRosterB19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF0E9F0197D886F00905275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF0E9F1197D886F00905275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF0EA16197D963B00905275 /* Person.swift */,
+				FA946AFE197DC57500384402 /* person.png */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -221,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA946AFF197DC57500384402 /* person.png in Resources */,
 				FAF0E9F7197D886F00905275 /* Main.storyboard in Resources */,
 				FAF0E9F9197D886F00905275 /* Images.xcassets in Resources */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA946AFD197DBCFF00384402 /* Person.swift in Sources */,
 				FAF0EA12197D8AB100905275 /* PersonTests.swift in Sources */,
 				FAF0EA05197D886F00905275 /* ClassRosterB19Tests.swift in Sources */,
 			);
@@ -433,6 +439,7 @@
 				FAF0EA0A197D886F00905275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAF0EA0B197D886F00905275 /* Build configuration list for PBXNativeTarget "ClassRosterB19Tests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +448,7 @@
 				FAF0EA0D197D886F00905275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

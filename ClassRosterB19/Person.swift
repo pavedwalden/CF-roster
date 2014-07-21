@@ -7,15 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 class Person {
     
     var firstName : String
     var lastName : String
+    var pic : UIImage?
     
     init(firstName: String, lastName: String) {
         self.firstName = firstName
         self.lastName = lastName
+        self.pic = UIImage(named: "person.png")
     }
     
     func fullName() -> String {
