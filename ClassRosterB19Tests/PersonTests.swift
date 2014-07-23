@@ -45,4 +45,8 @@ class PersonTests: XCTestCase {
     func testPersonPic() {
         XCTAssertNotNil(person.pic, "person has no pic value")
     }
+    
+//    func testRosterLength() {
+//        XCTAssertGreaterThan(
+//    }
 }

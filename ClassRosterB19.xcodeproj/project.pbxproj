@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FA946AFD197DBCFF00384402 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0EA16197D963B00905275 /* Person.swift */; };
 		FA946AFF197DC57500384402 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = FA946AFE197DC57500384402 /* person.png */; };
+		FA9B0C17197EC9D1004E79D1 /* people.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA9B0C16197EC9D1004E79D1 /* people.plist */; };
+		FA9B0C19197F13DC004E79D1 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B0C18197F13DC004E79D1 /* PersonCell.swift */; };
+		FA9B0C1B197F19B6004E79D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B0C1A197F19B6004E79D1 /* DetailViewController.swift */; };
 		FAF0E9F2197D886F00905275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0E9F1197D886F00905275 /* AppDelegate.swift */; };
 		FAF0E9F4197D886F00905275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0E9F3197D886F00905275 /* ViewController.swift */; };
 		FAF0E9F7197D886F00905275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF0E9F5197D886F00905275 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		FA946AFE197DC57500384402 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		FA9B0C16197EC9D1004E79D1 /* people.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = people.plist; sourceTree = "<group>"; };
+		FA9B0C18197F13DC004E79D1 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonCell.swift; path = ClassRosterB19/PersonCell.swift; sourceTree = "<group>"; };
+		FA9B0C1A197F19B6004E79D1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FAF0E9EC197D886F00905275 /* ClassRosterB19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassRosterB19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF0E9F0197D886F00905275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF0E9F1197D886F00905275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +102,9 @@
 		FAF0E9EF197D886F00905275 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA946AFE197DC57500384402 /* person.png */,
 				FAF0E9F0197D886F00905275 /* Info.plist */,
+				FA9B0C16197EC9D1004E79D1 /* people.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,7 +130,9 @@
 		FAF0EA0E197D889900905275 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA9B0C18197F13DC004E79D1 /* PersonCell.swift */,
 				FAF0E9F3197D886F00905275 /* ViewController.swift */,
+				FA9B0C1A197F19B6004E79D1 /* DetailViewController.swift */,
 			);
 			name = View;
 			path = ..;
@@ -140,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				FAF0EA16197D963B00905275 /* Person.swift */,
-				FA946AFE197DC57500384402 /* person.png */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -227,6 +236,7 @@
 			files = (
 				FA946AFF197DC57500384402 /* person.png in Resources */,
 				FAF0E9F7197D886F00905275 /* Main.storyboard in Resources */,
+				FA9B0C17197EC9D1004E79D1 /* people.plist in Resources */,
 				FAF0E9F9197D886F00905275 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +257,8 @@
 			files = (
 				FAF0E9F4197D886F00905275 /* ViewController.swift in Sources */,
 				FAF0EA17197D963B00905275 /* Person.swift in Sources */,
+				FA9B0C1B197F19B6004E79D1 /* DetailViewController.swift in Sources */,
+				FA9B0C19197F13DC004E79D1 /* PersonCell.swift in Sources */,
 				FAF0E9F2197D886F00905275 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
