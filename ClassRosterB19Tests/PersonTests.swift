@@ -46,7 +46,9 @@ class PersonTests: XCTestCase {
         XCTAssertNotNil(person.pic, "person has no pic value")
     }
     
-//    func testRosterLength() {
-//        XCTAssertGreaterThan(
-//    }
+    func testRosterLength() {
+        let people = Person.loadPeopleFromPlist()
+        println(people[0].firstName)
+        println(people[0].lastName)
+    }
 }
