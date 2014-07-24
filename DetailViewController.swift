@@ -53,8 +53,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(textField: UITextField!) {
         let initialWidth = self.view.bounds.width
         let initialHeight = self.view.bounds.height
-        let Y = textField.frame.origin.y - self.navigationController.navigationBar.frame.size.height
-        let newY = Y - 100 //had to break this into two lines because of "missing argument for parameter 'delay' in call" error
+        let newY = textField.frame.origin.y - 200
 
         UIView.animateWithDuration(0.3, animations:{ () -> Void
             in

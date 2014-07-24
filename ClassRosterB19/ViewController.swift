@@ -17,8 +17,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "People"
+        
+        let editButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "newPerson")
+        self.navigationItem.rightBarButtonItem = editButton
+        
         initRoster()
+    }
+    
+    func newPerson(){
+        let selection = self.storyboard.instantiateViewControllerWithIdentifier("selection") as DetailViewController
+        let newPerson = Person(firstName: "", lastName: "")
+        people.append(newPerson)
+        selection.person = newPerson
+        self.navigationController.pushViewController(selection, animated: true)
+        println("well, that worked")
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
@@ -40,18 +53,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return self.people.count
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if segue.identifier == "personDetail" {
-            let destination = segue.destinationViewController as DetailViewController
-            destination.person = people[tableView.indexPathForSelectedRow().row]
-            println("personDetail")
-        }else if segue.identifier == "personAdd" {
-            let destination = segue.destinationViewController as DetailViewController
-            let newPerson = Person(firstName: "", lastName: "")
-            people.append(newPerson)
-            destination.person = newPerson
-        }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//        if segue.identifier == "personDetail" {
+//            let destination = segue.destinationViewController as DetailViewController
+//            destination.person = people[tableView.indexPathForSelectedRow().row]
+//            println("personDetail")
+//        }else if segue.identifier == "personAdd" {
+//            let destination = segue.destinationViewController as DetailViewController
+//            let newPerson = Person(firstName: "", lastName: "")
+//            people.append(newPerson)
+//            destination.person = newPerson
+//        }
+//    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -77,9 +90,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let selection = self.storyboard.instantiateViewControllerWithIdentifier("selection") as DetailViewController
         selection.person = self.people[indexPath.row]
         
-        if self.navigationController {
+        //if self.navigationController {
             self.navigationController.pushViewController(selection, animated: true)
-        }
+        //}
     }
 }
 
